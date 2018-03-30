@@ -1,0 +1,203 @@
+<!doctype html>
+<html style="height: 100%">
+
+<head>
+    <title>A Personal Website</title>
+    <link href="style.css" rel="stylesheet">
+    <link href=" http://fonts.googleapis.com/css?family=Open+Sans:300,600" s rel='stylesheet' type='text/css'>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: aquamarine;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="graphic.html">Graphic</a>
+        <a href="print.html">Print</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+
+    <span style="position: absolute; z-index: 999; font-size:x-large; top: 24px; left: 24px; cursor:pointer" onclick="openNav()">
+        <small>&#9776;</small> menu</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+    <body style="height: 100%">
+        <div class="container ab-flex column middle center blue-bg" id="section-alpha">
+            <span class="name">Hello, I am
+                <span onclick="smoothScroll('section-beta')">Abby Morin</span>
+            </span>
+            <!-- <img src="logo.png" style="width: 200px"> -->
+            <div class="bubbles-container">
+                <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
+
+                    <g class="bubbles-large" stroke-width="7">
+                        <g>
+                            <g transform="translate(10 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(373 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(408 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(621 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(179 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                    </g>
+
+                    <g class="bubbles-small" stroke-width="4">
+                        <g>
+                            <g transform="translate(147 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(255 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(573 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(429 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(91 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(640 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(321 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(376 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(376 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(497 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                    </g>
+
+                </svg>
+            </div>
+        </div>
+
+        <div class="container ab-flex column middle center" id="section-video">
+            this section will have a video
+        </div>
+
+
+        <div class="container ab-flex row middle center" id="section-beta">
+            <div class="card ab-flex column">
+                Photo 1
+            </div>
+            <div class="card ab-flex column">
+                Photo 2
+            </div>
+            <div class="card ab-flex column">
+                Photo 3
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html style="height: 100%">
+
+<head>
+    <title>A Personal Website</title>
+    <link href="style.css" rel="stylesheet">
+    <link href=" http://fonts.googleapis.com/css?family=Open+Sans:300,600"s rel='stylesheet' type='text/css'>
+</head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:aquamarine;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="about.html">About</a>
+  <a href="graphic.html">Graphic</a>
+  <a href="print.html">Print</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+	
+	
+
+
+	
+	<section id="s1">
+		<h1>Hello </h1>
+		<p>I'm a 24 year old </p>
+	</section>
+	
+  
+
+
+	<div class="container ab-flex row middle center" id="section-beta">
+        <div class="card ab-flex column">
+            Photo 1
+        </div>
+        <div class="card ab-flex column">
+            Photo 2
+        </div>
+        <div class="card ab-flex column">
+            Photo 3
+        </div>
+    </div> 
+	
+	<section id="s4">
+	<div>
+		<h2>div1</h2>
+	</div>
+	
+	<div>
+		<h2>div2</h2>
+	</div>
+	
+	<div>
+		<h2>div3</h2>
+	</div>
+</section>
+
+
+    <script src="script.js"></script>
+	
+	
+     
+</body>
+</html> 
+

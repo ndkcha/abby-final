@@ -1,0 +1,70 @@
+<!doctype html>
+<html style="height: 100%">
+
+<head>
+    <title>A Personal Website</title>
+    <link href="style.css" rel="stylesheet">
+    <link href=" http://fonts.googleapis.com/css?family=Open+Sans:300,600"s rel='stylesheet' type='text/css'>
+</head>
+
+	
+<body style="height: 100%">
+    <div class="container ab-flex row middle center blue-bg" id="section-alpha">
+        <span class="name">Hello, I am <span onclick="smoothScroll('section-beta')">Abby Morin</span></span>
+    </div>
+
+    <div class="container ab-flex column middle center" id="section-video">
+        this section will have a video
+    </div>
+
+
+	<div class="container ab-flex row middle center" id="section-beta">
+        <div class="card ab-flex column">
+            Photo 1
+        </div>
+        <div class="card ab-flex column">
+            Photo 2
+        </div>
+        <div class="card ab-flex column">
+            Photo 3
+        </div>
+    </div> 
+
+    <div class="container ab-flex column middle center" id="section-contact">
+        <span class="text">Let's be in touch!</span>
+        <form class="contact-form" action="mailto:ndkcha@gmail.com" method="POST" enctype="text/plain" validate>
+            <div class="ab-flex row">
+                <div class="ab-flex column" style="margin-right: 16px;">
+                    <label>First name:<span style="color: red">*</span></label>
+                    <input type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="ab-flex column" style="margin-left: 16px;">
+                    <label>Last name:</label>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="ab-flex row" style="margin-top: 24px;">
+                <div class="ab-flex column" style="margin-right: 16px;">
+                    <label>Phone:</label>
+                    <input type="tel" placeholder="Enter your phone number">
+                </div>
+                <div class="ab-flex column" style="margin-left: 16px;">
+                    <label>Email:</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="ab-flex column" style="margin-top: 24px;">
+                <label>Your comment:</label>
+                <textarea placeholder="Write here"></textarea>
+            </div>
+            <div class="ab-flex row" style="margin-top: 24px;">
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
