@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: aquamarine;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        div.gallery {
+            margin: 5px;
+            box-shadow: 1px 1px 3px #ccc;
+            float: left;
+            width: 180px;
+            height: fit-content;
+            transition: all 300ms ease;
+        }
+
+        div.gallery:hover {
+            box-shadow: 1px 1px 3px #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="graphic.html">Graphic</a>
+        <a href="print.html">Print</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+
+    <span style="position: absolute; z-index: 999; font-size:x-large; top: 24px; left: 24px; cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <div class="container ab-flex column middle center">
+        <div style="font-size: 20pt; font-weight: 300; margin-bottom: 48px">My Gallery</div>
+        <div class="ab-flex row middle center">
+            <div class="gallery">
+                <a target="_blank" href="images/img1.jpg">
+                    <img src="images/img1.jpg" alt="Trolltunga Norway">
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/img2.jpg">
+                    <img src="images/img2.jpg" alt="Forest">
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/img4.jpg">
+                    <img src="images/img4.jpg" alt="Mountains">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="images/img5.jpg">
+                    <img src="images/img5.jpg" alt="Mountains">
+                </a>
+            </div>
+        </div>
+        <div class="ab-flex row middle center">
+            <div class="gallery">
+                <a target="_blank" href="images/img3.jpg">
+                    <img src="images/img3.jpg" alt="Northern Lights">
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/img6.jpg">
+                    <img src="images/img6.jpg" alt="Mountains">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="images/img7.jpg">
+                    <img src="images/img7.jpg" alt="Mountains">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
